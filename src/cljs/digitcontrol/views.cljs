@@ -2,7 +2,7 @@
   (:require [re-frame.core :as re-frame]
             [re-com.core :as re-com]
             [digitcontrol.subs :as subs]
-            ))
+            [reagent.core :as reagent]))
 
 (defn title []
   (let [name (re-frame/subscribe [::subs/name])]
@@ -11,9 +11,9 @@
      :level :level1]))
 
 ((defn helloworld
-  "docstring"
-  []
-  "this is a test: hello world!"))
+   "docstring"
+   []
+   "this is a test: hello world!"))
 
 (defn main-panel []
   [re-com/v-box
